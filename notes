@@ -1,0 +1,2 @@
+1. non-const variables declared outside of a block are assumed to be external. However, const variables declared outside of a block are assumed to be internal.
+2.
