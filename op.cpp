@@ -3,6 +3,12 @@
 #include <fstream>
 #include <vector>
 using namespace std;
+double get_double(istream& ist) {
+  double result = 0.0;
+  ist >> result;
+  skip(ist);
+  return result;
+}
 void skip(istream& ist) {
   if (ist.fail()) 
     ist.clear();
